@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: tvmaze
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/tvmaze}
+    username: ${DB_USER:tvmaze}
+    password: ${DB_PASSWORD:tvmaze}
+
+replica:
+  datasource:
+    url: ${DB_REPLICA_URL:${spring.datasource.url}}
+
+scrape:
+  enabled: true
+  base-url: https://api.tvmaze.com
+  request-delay-ms: 600
+  max-retries: 5
+  incremental-interval-ms: 3600000
