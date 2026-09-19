@@ -8,5 +8,5 @@ data class ScrapeProperties(
     val baseUrl: String = "https://api.tvmaze.com",
     val requestDelayMs: Long = 600,
     val maxRetries: Int = 5,
-    val incrementalIntervalMs: Long = 3_600_000,
+    val incrementalIntervalMs: Long = 36_000_000,
 )

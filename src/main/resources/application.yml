@@ -15,4 +15,4 @@ scrape:
   base-url: https://api.tvmaze.com
   request-delay-ms: 600
   max-retries: 5
-  incremental-interval-ms: 3600000
+  incremental-interval-ms: 36000000
